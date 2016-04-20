@@ -1,0 +1,83 @@
+  ////////////
+ //Befehle://
+////////////
+LDA xx		load accumulator 
+Lade Akkumulator mit dem Wert aus Adresse xx
+
+STA xx		store accumulator 
+Speichere Akkumulatorinhalt in Adresse xx
+
+LAI xx		load accumulator  indirect
+Lade Akkumulator mit dem Wert der Adresse die in Adresse xx angegeben wurde
+
+SAI xx		store accumulator indirect
+Speichere Akkumulator in der Adresse, die in Adresse xx steht
+
+ADD xx		add
+Addiere zum Akkumulatorinhalt den Inhalt der Adresse xx
+
+SUB xx		subtract
+Subtrahiere vom Akkumulatorinhalt den Inhalt der Adresse xx
+
+JMP xx		jump
+Springe zur Adresse xx
+
+JIN xx		jump if negative
+Springe zur Adresse xx, wenn der Akkumulatorinhalt negativ ist
+
+JIP xx		jump if positive
+Springe zur Adresse xx, wenn der Akkumulatorinhalt positiv ist
+
+JEZ xx		jump equal to zero
+Springe zur Adresse xx, wenn der Akkumulatorinhalt gleich Null ist
+
+JNZ xx		jump if not zero
+Springe zur Adresse xx, wenn der Akkumulatorinhalt nicht gleich Null ist
+
+END			end
+Programmende
+
+
+  /////////////
+ //Speicher://
+/////////////
+1-29
+Diese Speicheradressen können von Hand editiert werden.
+
+30
+Der Inhalt dieser Speicheradresse wird von Benutzer bestimmt während das Programm ausgeführt wird:
+LDA 30 lädt den ASCII-Wert der Taste die als nächstes gedrückt wird in den Akkumulator.
+Dieser Speicher kann nur mit LDA und LAI verwendet werden!
+
+31-60
+Diese Speicheradressen werden auf besondere Art und Weise auf dem Bildschirm des Programmfensters dargestellt.
+Er kann nicht von Hand geändert werden. Er kann aber genauso als Speicher genutzt werden wie 1-29.
+Die Speicher sind allerdings nebeneinander angeordnet (10 pro zeile).
+In die Speicherstellen müssen die dezimalwerte einmes ASCII symbols eingetragen werden. 
+Wenn man den z.B. den Wert 97 in die Speicherstelle 31 schreibt, zeigt der Bildschirm dies als "a" an, 
+weil 97 der ASCII-Dezimalcode für das kleine "a" ist.
+Eine vollständige ASCII-Tabelle ist z.B. hier zu finden: http://www.chip.de/ii/1/2/5/4/9/5/8/0/ascii-93c823e7009f26b0.png
+Es ist nur die Darstellung der ersten 128 Zeichen vorgesehen.
+
+
+  ////////////////////
+ //Geschwindigkeit://
+////////////////////
+Über den Schieberegler im Fenster kann man die Geschwindigkeit 
+in der das Programm die einzelnen Schritte ausführt regulieren.
+1: jeder Befehl muss von Benutzer bestätigt werden.
+2-9: langsame - schnellere Ausführung
+10: extrem schnelle Ausführung
+
+
+  ///////////////////////
+ //Weitere Funktionen://
+///////////////////////
+Über die Menüleiste lässt sich der eingegebene Code als Textdatei abspeichern.
+(Tastenkombination: Strg+S)
+Genauso kann man auch den Code aus einer Textdatei laden lassen.
+(Tastenkombination: Strg+L)
+Der Button "Programm ausführen" führt den eingegebenen Programmcode aus.
+Mit dem Element unter welchem "Starten bei Adresse" steht, 
+kann festgelegt werden, ab welcher Zeile der Code ausgeführt werden soll.
+Der Button "Programm Abbrechen", bricht die Codeausführung nach dem aktuellen Befehl ab.

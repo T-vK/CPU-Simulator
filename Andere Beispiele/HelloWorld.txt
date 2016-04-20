@@ -1,0 +1,28 @@
+LDA 18
+STA 31
+LDA 19
+STA 32
+LDA 20
+STA 33
+LDA 21
+STA 34
+LDA 22
+STA 35
+LDA 23
+STA 36
+
+
+
+
+END
+72
+65
+76
+76
+79
+33
+
+
+
+
+
